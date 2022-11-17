@@ -1,5 +1,7 @@
 # 2 player Tic Tac Toe
 
+import os
+
 class TicTacToe:
 
     def __init__(self):       
@@ -61,6 +63,7 @@ class TicTacToe:
             return False          
 
     def DrawBoard(self):
+        os.system('cls')
         print("\n")
         print("    1    |    2    |    3    ")
         print("         |         |         ")        
@@ -122,3 +125,5 @@ class TicTacToe:
 #main
 Game = TicTacToe()
 Game.Play()
+
+input("press enter to close\n")
